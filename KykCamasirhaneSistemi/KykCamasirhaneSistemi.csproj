@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB21AF09-2DB4-4325-BB1B-5452CA91C1D4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KykCamasirhaneSistemi</RootNamespace>
+    <AssemblyName>KykCamasirhaneSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfaFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfaFormu.Designer.cs">
+      <DependentUpon>AnaSayfaFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CamasirMakinesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CamasirMakinesi.Designer.cs">
+      <DependentUpon>CamasirMakinesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="girisFormu.Designer.cs">
+      <DependentUpon>girisFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciBilgileri.Designer.cs">
+      <DependentUpon>KullaniciBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciBilgileriGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciBilgileriGuncelle.Designer.cs">
+      <DependentUpon>KullaniciBilgileriGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciListele.Designer.cs">
+      <DependentUpon>KullaniciListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciSil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciSil.Designer.cs">
+      <DependentUpon>KullaniciSil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KurutmaMakinesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KurutmaMakinesi.Designer.cs">
+      <DependentUpon>KurutmaMakinesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KykCamasirhaneProjesiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KykCamasirhaneProjesiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KykCamasirhaneProjesiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KykCamasirhaneProjesiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KykCamasirhaneProjesiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KykCamasirhaneProjesiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KykCamasirhaneProjesiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KykCamasirhaneProjesiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MakineSecimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakineSecimi.Designer.cs">
+      <DependentUpon>MakineSecimi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RezervasyonGuncellemeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervasyonGuncellemeFormu.Designer.cs">
+      <DependentUpon>RezervasyonGuncellemeFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RezervasyonListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervasyonListele.Designer.cs">
+      <DependentUpon>RezervasyonListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RezervasyonSilmeFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RezervasyonSilmeFormu.Designer.cs">
+      <DependentUpon>RezervasyonSilmeFormu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaSayfaFormu.resx">
+      <DependentUpon>AnaSayfaFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CamasirMakinesi.resx">
+      <DependentUpon>CamasirMakinesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="girisFormu.resx">
+      <DependentUpon>girisFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciBilgileri.resx">
+      <DependentUpon>KullaniciBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciBilgileriGuncelle.resx">
+      <DependentUpon>KullaniciBilgileriGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciListele.resx">
+      <DependentUpon>KullaniciListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciSil.resx">
+      <DependentUpon>KullaniciSil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KurutmaMakinesi.resx">
+      <DependentUpon>KurutmaMakinesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakineSecimi.resx">
+      <DependentUpon>MakineSecimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RezervasyonGuncellemeFormu.resx">
+      <DependentUpon>RezervasyonGuncellemeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RezervasyonListele.resx">
+      <DependentUpon>RezervasyonListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RezervasyonSilmeFormu.resx">
+      <DependentUpon>RezervasyonSilmeFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="KykCamasirhaneProjesiDataSet.xsc">
+      <DependentUpon>KykCamasirhaneProjesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KykCamasirhaneProjesiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet.xss">
+      <DependentUpon>KykCamasirhaneProjesiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet1.xsc">
+      <DependentUpon>KykCamasirhaneProjesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KykCamasirhaneProjesiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet1.xss">
+      <DependentUpon>KykCamasirhaneProjesiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet2.xsc">
+      <DependentUpon>KykCamasirhaneProjesiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KykCamasirhaneProjesiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet2.xss">
+      <DependentUpon>KykCamasirhaneProjesiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet3.xsc">
+      <DependentUpon>KykCamasirhaneProjesiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KykCamasirhaneProjesiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KykCamasirhaneProjesiDataSet3.xss">
+      <DependentUpon>KykCamasirhaneProjesiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %285%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-12-29 at 19.04.35.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-codioful-7130560.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-12-29 at 19.12.03.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-12-07 at 16.31.48.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-29 192723.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekran görüntüsü 2024-12-29 192732.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-12-29 at 19.33.45.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2024-12-29 at 19.34.25.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Duvar Kağıdı.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-codioful-71305601.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b8d46635ae9e03731b9a08cb84f236f0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%291.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-alscre-2847648.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-codioful-71305602.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7a6ad3d3bfb55b73332bf4ca7801668d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a062e8403e7b00bcb72139e228b59981.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57b04e247ea55a5857ca3d8cf5fddba4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04544de6-f95d-4cf4-ae37-fda66a3d81c2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f47fae21-8eb6-40b7-ad09-2e2ebd1d95e4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36d16613-29d6-45be-baa4-8c67b64d2dde.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36d16613-29d6-45be-baa4-8c67b64d2dde1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c50694c7202b32d6a76361b9efc95981.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8d717aca-4ab8-4049-a449-8d5d19aec424.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f19ca0e48f0a3569d1a21a0b0c635c70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b8d46635ae9e03731b9a08cb84f236f01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Duvar Kağıdı1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-codioful-71305603.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %284%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a062e8403e7b00bcb72139e228b599811.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3f27582c-fc22-4cd9-bcca-83b7c147f60a.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3f27582c-fc22-4cd9-bcca-83b7c147f60a1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36d16613-29d6-45be-baa4-8c67b64d2dde2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f19ca0e48f0a3569d1a21a0b0c635c701.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57b04e247ea55a5857ca3d8cf5fddba41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %281%292.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\859849700b6b4323e144ba440276e7cf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c689b80f94f7bf57b7ac0e4dfa787111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\963eda5057c309651ce12b0d2aa05a08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indir %286%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wallpaper.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
